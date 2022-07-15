@@ -11,11 +11,7 @@ const app = express()
 const server = http.createServer(app)
 const io = socketio(server)
 
-<<<<<<< HEAD
 const port = process.env.PORT || 3000
-=======
-const port = process.env.port || 3000
->>>>>>> 071475d2150c58a9361517f25905e054915ac12b
 const publicDirectoryPath = path.join(__dirname, '../public')
 
 app.use(express.static(publicDirectoryPath))
